@@ -2,14 +2,25 @@
 
 By Rafael G. Couto <rafaelgcouto@gmail.com>
 
+
+
 ## Developed work
 
 In order to develop this practical test, I've implemented a Laravel package with everything necessary to handle the discounts tasks
 proposed by the Cloudoki team.
 
+
+
 ## Installation
 
-TODO
+Since this is just a practical test and not for production, it is required to lower the minimum stability of Laravel in order to be able to include this package. 
+
+In order to do so update composer.json of your Laravel project and add the two lines below:
+`"minimum-stability" : "dev",`
+`"prefer-stable" : true`
+
+Then add the package to your project by running the following command:
+    `composer require rgcouto/discounts "*"`
 
 
 ## Discounts configuration

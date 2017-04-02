@@ -2,9 +2,7 @@
 
 namespace rgcouto\Discounts;
 
-use App\Http\Controllers\Controller;
-
-class DiscountsCalculator extends Controller {
+class DiscountsCalculator {
 
     private $order;
 
@@ -16,7 +14,7 @@ class DiscountsCalculator extends Controller {
 
     public function __construct($order) {
         $this->order = $order;
-        $this->discountCriterion = new DiscountCriterion(base_path('packages/rgcouto/discounts/config')."/criterion.json");
+        $this->discountCriterion = new DiscountCriterion(base_path('vendor/rgcouto/discounts/config')."/criterion.json");
     }
 
 

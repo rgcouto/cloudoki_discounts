@@ -9,5 +9,10 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-    "license": "MIT"
+    "license": "MIT",
+     "autoload": {
+        "psr-4": {
+            "rgcouto\\Discounts\\": "src/"
+        }
+    }
 }
