@@ -111,34 +111,33 @@ so that you can be able to include this package. In order to do so update you co
 
 Open your browser and navigate to the following URL:
 
-	```
+	
 	http://YOU_LARAVEL_INSTALLATION_URL/order/1
-	```
+
     
-   (this link will calculate the discounts for the order located in cloudoki/example-data/order1.json, you can change the number to check the 
-   discounts on other files.)
+   (this link will calculate the discounts for the order located in *cloudoki/example-data/order1.json*, you can change the number in the end of the URL to check the discounts on the other files/orders.)
 
 ## Discounts configuration
 
 In the config folder of the package it is possible to find a discount criterion configuration file.
 
-In this file there are 3 discount types pre-configured:
+In this file there are 3 pre-configured types of discount:
 - [discountPercentageByRevenue] A customer who has already bought for over € 1000, gets a discount of 10% on the whole order.
 - [freeByAmountOfItemsOfSameCategory] For every products of category "Switches" (id 2), when you buy five, you get a sixth for free.
 - [percentageOnCheapestByAmountOfItemsOfSameCategory] If you buy two or more products of category "Tools" (id 1), you get a 20% discount on the cheapest product.
 
-It is possible to add more discounts, just follow the instructions in the criterion.json file.
+It is possible to add more discounts to the 3 types, just follow the structure instructed in the criterion.json file (_comment_[...] field).
 
 ## Results
 
-By querying an order, the discounts will be calculated, applied and a new order JSON object will be returned. However, this JSON object has a few changes, namely in:
+By querying an order, the discounts will be calculated, applied and a new order JSON object will be returned already with the discounts applied. However, this JSON object has a few changes in regard to the original one, namely in:
 
 - Each item of each order can now have two new fields: 
 
-    - *discount*: if present, with the discount percentage that was appliedapplied to the item;
-    - *free*: if present, free items are to be added to the order.
+    - *discount*: if present, with the discount percentage that was applied to the item;
+    - *free*: if present, free items that are to be added to the order.
     
-- Each order will can also have:
+- Each order can also have:
     
-    - *discount-reasons*: if present, stating clearly why and which the discounts were made;
-    - *discount*: if present, the discount made on the whole order.
+    - *discount-reasons*: if present, stating clearly which and why the discounts were made;
+    - *discount*: if present, the discount percentage made on the whole order.
