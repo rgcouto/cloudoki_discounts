@@ -17,35 +17,35 @@ proposed by the Cloudoki team.
 so that you can be able to include this package. In order to do so update you composer.json file of your Laravel project by adding the two lines below:
 
     
-    "minimum-stability" : "dev", 
-    "prefer-stable" : true
+    ```"minimum-stability" : "dev", 
+    "prefer-stable" : true```
 
 - Then add the package to your project by running the following command:
 
     
-    composer require rgcouto/discounts "*"
+    ```composer require rgcouto/discounts "*"```
 
 - Copy the cloudoki folder with example data to the project root by running the following command:
 
     
-    cp -R vendor/rgcouto/discounts/cloudoki/* ./
+    ```cp -R vendor/rgcouto/discounts/cloudoki/* ./```
 
 
 - On routes/web.php add the following line
 
 
-    Route::get('order/{order}', 'OrderController@processOrder');
+    ```Route::get('order/{order}', 'OrderController@processOrder');```
 
 
 - Run
 
 
-    php artisan make:controller OrderController
+    ```php artisan make:controller OrderController```
 
 
 - Open OrderController.php and add the following functions
 
-
+```
     /**
      *
      * Processes order by loading orders from file
@@ -103,12 +103,13 @@ so that you can be able to include this package. In order to do so update you co
          $returnOrder = new DiscountsCalculator($order);
          return $returnOrder->getOrderWithDiscount();
     }  
+```	
 
 ## Usage
 
 Open your browser and navigate to the following URL:
 
-    http://YOU_LARAVEL_INSTALLATION_URL/order/1
+	```http://YOU_LARAVEL_INSTALLATION_URL/order/1```
     
    (this link will calculate the discounts for the order located in cloudoki/example-data/order1.json, you can change the number to check the 
    discounts on other files.)
