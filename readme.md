@@ -17,8 +17,10 @@ proposed by the Cloudoki team.
 so that you can be able to include this package. In order to do so update you composer.json file of your Laravel project by adding the two lines below:
 
     
-    ```"minimum-stability" : "dev", 
-    "prefer-stable" : true```
+    ```
+    "minimum-stability" : "dev", 
+    "prefer-stable" : true
+    ```
 
 - Then add the package to your project by running the following command:
 
@@ -109,7 +111,9 @@ so that you can be able to include this package. In order to do so update you co
 
 Open your browser and navigate to the following URL:
 
-	```http://YOU_LARAVEL_INSTALLATION_URL/order/1```
+	```
+	http://YOU_LARAVEL_INSTALLATION_URL/order/1
+	```
     
    (this link will calculate the discounts for the order located in cloudoki/example-data/order1.json, you can change the number to check the 
    discounts on other files.)
