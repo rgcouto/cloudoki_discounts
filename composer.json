@@ -1,0 +1,12 @@
+{
+    "name": "rgcouto/discounts",
+    "description": "A package to apply discounts on orders.",
+    "authors": [
+        {
+            "name": "Rafael Couto",
+            "email": "rafaelgcouto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
