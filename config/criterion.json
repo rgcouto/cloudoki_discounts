@@ -1,17 +1,15 @@
 {
   "_comment_discountPercentageByRevenue": "minimum_user_revenue : discount_percentage",
   "discountPercentageByRevenue": {
-    "1000": 10,
-    "400": 5
+    "1000": 10
   },
-  "_comment_freeByAmountOfItemsOfSameCategory": "category_id : array( minimum_amount : free_items, [...] )",
+  "_comment_freeByAmountOfItemsOfSameCategory": "category_id : { minimum_amount : free_items, [...] }",
   "freeByAmountOfItemsOfSameCategory": {
     "2": {
-      "5": 1,
-      "10": 5
+      "5": 1
     }
   },
-  "_comment_percentageOnCheapestByAmountOfItemsOfSameCategory": "category_id : array( minimum_amount : discount_percentage, [...] )",
+  "_comment_percentageOnCheapestByAmountOfItemsOfSameCategory": "category_id : { minimum_amount : discount_percentage, [...] }",
   "percentageOnCheapestByAmountOfItemsOfSameCategory": {
     "1": {
       "2": 20
