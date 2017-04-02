@@ -9,7 +9,8 @@ By Rafael G. Couto <rafaelgcouto@gmail.com>
 In order to develop this practical test, I've implemented a Laravel package with everything necessary to handle the discounts tasks
 proposed by the Cloudoki team.
 
-
+## Requirements
+- A fresh (or not) installation of Laravel 5.4
 
 ## Installation
 
