@@ -31,7 +31,7 @@ so that you can be able to include this package. In order to do so update you co
 - Copy the cloudoki folder with example data to the project root by running the following command:
 
     
-    ```cp -R vendor/rgcouto/discounts/cloudoki/* ./```
+    ```cp -R vendor/rgcouto/discounts/cloudoki ./```
 
 
 - On routes/web.php add the following line
